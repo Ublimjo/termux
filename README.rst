@@ -2,7 +2,6 @@
 termux
 ======
 
-
 Termux Api In Python
 
 
