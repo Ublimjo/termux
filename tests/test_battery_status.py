@@ -1,0 +1,24 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import pytest
+from termux import battery_status
+
+__author__ = "Ublim"
+__copyright__ = "Ublim"
+__license__ = "mit"
+
+
+workon = battery_status()
+
+
+def test_percentage():
+    assert 0 <= workon["percentage"] <= 100
+
+
+def test_plugged():
+    assert workon["plugged"] in ("UNPLUGGED", "PLUGGED_AC", "PLUGGED_DC")
+
+
+def test_status():
+    assert workon["status"] in ("DISCHARGING", "CHARGING")

@@ -9,4 +9,6 @@ except DistributionNotFound:
 finally:
     del get_distribution, DistributionNotFound
 
+
 from .audio_info import audio_info
+from .battery_status import battery_status
