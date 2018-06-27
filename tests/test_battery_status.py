@@ -21,4 +21,4 @@ def test_plugged():
 
 
 def test_status():
-    assert workon["status"] in ("DISCHARGING", "CHARGING")
+    assert workon["status"] in ("DISCHARGING", "CHARGING", "FULL")
