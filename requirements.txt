@@ -1,1 +1,2 @@
-commands==*
+sh >= 1.12
+python-box >= 3.1
