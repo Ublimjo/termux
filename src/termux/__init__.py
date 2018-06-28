@@ -30,3 +30,4 @@ from .audio_info import audio_info
 from .battery_status import battery_status
 from .brightness import brightness
 from .camera_info import camera_info
+from .camera_photo import camera_photo
