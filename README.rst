@@ -18,7 +18,11 @@ Working command
 - termux-battery-status
 - termux-brightness
 - termux-camera-info
-
+- termux-camera-photo
+- termux-clipboard-get
+- termux-clipboard-set
+- termux-contact-list
+- termux-location
 
 Note
 ====
