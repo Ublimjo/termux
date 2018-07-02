@@ -1,4 +1,8 @@
 # -*- coding: utf-8 -*-
+'''
+Termux api warper for pythno
+'''
+
 from pkg_resources import get_distribution, DistributionNotFound
 
 try:
@@ -10,8 +14,13 @@ finally:
     del get_distribution, DistributionNotFound
 
 
-class Termux_object:
+from box import Box
 
+
+class Termux_object:
+    '''
+    Base object for basic object utility.
+    '''
     def __init__(self):
         self.output = ''
         self.result = Box.from_json(str(self.output))
@@ -22,7 +31,7 @@ class Termux_object:
     def __str__(self):
         return str(self.result)
 
-    def __reprr__(self):
+    def __repr__(self):
         return repr(self.result)
 
 
@@ -31,3 +40,6 @@ from .battery_status import battery_status
 from .brightness import brightness
 from .camera_info import camera_info
 from .camera_photo import camera_photo
+from .clipboard import Clipboard
+from .contact_list import Contact_list
+from .location import Location

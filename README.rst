@@ -2,7 +2,7 @@
 termux
 ======
 
-Termux Api In Python
+Termux Api In Python [in development]
 
 
 Description

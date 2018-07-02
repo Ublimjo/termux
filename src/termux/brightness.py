@@ -1,15 +1,17 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+'''
+Set the screen brightness
+'''
 
 from __future__ import division, print_function, absolute_import
 
 import sys
-from box import Box
 
 try:
     from sh import termux_brightness
 except ImportError:
-    print('Unable to find termux_audio_info')
+    print('Unable to find termux_brightness')
     print('Please install or update termux-api')
     print(' $ pkg install termux-api')
     sys.exit(2)

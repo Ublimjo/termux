@@ -4,13 +4,11 @@
 from __future__ import division, print_function, absolute_import
 
 import sys
-from box import Box
-from termux import Termux_object
 
 try:
     from sh import termux_camera_photo
 except ImportError:
-    print('Unable to find termux_audio_info')
+    print('Unable to find termux_camera_photo')
     print('Please install or update termux-api')
     print(' $ pkg install termux-api')
     sys.exit(2)
@@ -23,8 +21,8 @@ def camera_photo(output_file, camera_id=0):
     :param output_file: Path of file to save photo
     :type output_file: str
 
-    :param camera_id: ID of the camera to use (see termux-camera-info), default: 0
+    :param camera_id: ID of the camera to use (see termux-camera-info)
     :type camera_id: int
     """
-    
+
     termux_camera_photo('-c', camera_id, output_file)

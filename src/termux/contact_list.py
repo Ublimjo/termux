@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+'''
+List all contacts.
+'''
 
 from __future__ import division, print_function, absolute_import
 
@@ -8,18 +11,18 @@ from box import Box
 from termux import Termux_object
 
 try:
-    from sh import termux_camera_info
+    from sh import termux_contact_list
 except ImportError:
-    print('Unable to find termux_camera_info')
+    print('Unable to find termux_contact_list')
     print('Please install or update termux-api')
     print(' $ pkg install termux-api')
     sys.exit(2)
 
 
-class camera_info(Termux_object):
+class Contact_list(Termux_object):
     """
-    Get information about device camera(s).
+    List all contacts.
     """
     def __init__(self):
-        self.output = termux_camera_info()
-        self.result = Box(str(self.output))
+        self.output = termux_contact_list()
+        self.result = Box.from_json(str(self.output))

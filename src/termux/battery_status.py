@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+'''
+Get the status of the device battery.
+'''
 
 from __future__ import division, print_function, absolute_import
 
@@ -10,7 +13,7 @@ from termux import Termux_object
 try:
     from sh import termux_battery_status
 except ImportError:
-    print('Unable to find termux_audio_info')
+    print('Unable to find termux_battery_status')
     print('Please install or update termux-api')
     print(' $ pkg install termux-api')
     sys.exit(2)
