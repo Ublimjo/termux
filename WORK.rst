@@ -12,7 +12,7 @@ termux-dialog
 termux-download
 termux-elf-cleaner
 termux-fingerprint
-termux-fix-shebang
+[ok] termux-fix-shebang
 termux-info
 termux-infrared-frequencies
 termux-infrared-transmit
