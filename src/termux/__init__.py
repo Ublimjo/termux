@@ -42,5 +42,6 @@ from .camera_info import camera_info
 from .camera_photo import camera_photo
 from .clipboard import Clipboard
 from .contact_list import Contact_list
-from .location import Location
+from .download import download
 from .fix_shebang import fix_shebang
+from .location import Location

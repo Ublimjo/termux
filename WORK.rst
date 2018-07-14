@@ -9,7 +9,7 @@ termux-chroot
 [ok] termux-clipboard-set
 [ok] termux-contact-list
 termux-dialog
-termux-download
+[ok] termux-download
 termux-elf-cleaner
 termux-fingerprint
 [ok] termux-fix-shebang
