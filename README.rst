@@ -17,7 +17,6 @@ Working command
 - termux-audio-info
 - termux-battery-status
 - termux-brightness
-- termux-camera-info
 - termux-camera-photo
 - termux-clipboard-get
 - termux-clipboard-set

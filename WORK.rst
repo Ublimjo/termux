@@ -2,7 +2,7 @@
 [ok] termux-battery-status
 [ok] termux-brightness
 termux-call-log
-[ok] termux-camera-info
+termux-camera-info
 [ok] termux-camera-photo
 termux-chroot
 [ok] termux-clipboard-get

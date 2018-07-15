@@ -38,7 +38,6 @@ class Termux_object:
 from .audio_info import audio_info
 from .battery_status import Battery_status
 from .brightness import brightness
-from .camera_info import camera_info
 from .camera_photo import camera_photo
 from .clipboard import Clipboard
 from .contact_list import Contact_list
