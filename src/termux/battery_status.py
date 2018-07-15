@@ -19,10 +19,11 @@ except ImportError:
     sys.exit(2)
 
 
-class battery_status(Termux_object):
+class Battery_status(Termux_object):
     """
     Get the status of the device battery.
     """
     def __init__(self):
+        super().__init__()
         self.output = termux_battery_status()
         self.result = Box.from_json(str(self.output))
