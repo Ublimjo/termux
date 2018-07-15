@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+'''
+Take a photo and save it to a file in JPEG format.
+'''
 
 from __future__ import division, print_function, absolute_import
 

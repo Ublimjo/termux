@@ -2,14 +2,14 @@
 # -*- coding: utf-8 -*-
 
 import pytest
-from termux import battery_status
+from termux import Battery_status
 
 __author__ = "Ublim"
 __copyright__ = "Ublim"
 __license__ = "mit"
 
 
-workon = battery_status()
+workon = Battery_status()
 
 
 def test_percentage():
