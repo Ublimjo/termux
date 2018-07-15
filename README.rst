@@ -23,6 +23,7 @@ Working command
 - termux-clipboard-set
 - termux-contact-list
 - termux-location
+- termux-download
 
 Note
 ====
