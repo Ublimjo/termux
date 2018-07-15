@@ -39,3 +39,6 @@ def download(url, desc='', title=''):
 
     if (not desc) and (title):
         termux_download(url, '-t', title)
+
+    if (not desc) and (not title):
+        termux_download(url)
