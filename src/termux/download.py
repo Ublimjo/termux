@@ -31,14 +31,20 @@ def download(url, desc='', title=''):
     :type title: str
     """
 
-    if desc and title:
-        termux_download(url, '-d', desc, '-t', title)
+    #if desc and title:
+    #    termux_download(url, '-d', desc, '-t', title)
+    #
+    #if desc and (not title):
+    #    termux_download(url, '-d', desc)
+    #
+    #if (not desc) and (title):
+    #    termux_download(url, '-t', title)
+    #
+    #if (not desc) and (not title):
+    #    termux_download(url)
 
-    if desc and (not title):
-        termux_download(url, '-d', desc)
-
-    if (not desc) and (title):
-        termux_download(url, '-t', title)
-
-    if (not desc) and (not title):
-        termux_download(url)
+    termux_download(
+            '-d {}'.format(desc) if desc else '',
+            '-t {}'.format(title) if title else '',
+            url,
+    )
